@@ -1,14 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
 
-button {
-    margin: 20rem;
-    padding: 2rem 4rem;
-    background: rgb(111, 82, 207);
-    border: 0.3rem solid rgb(111, 82, 207);
-    color: white;
-    font-size: 2.4rem;
-    border-radius: 1rem;
-    cursor: pointer;
+h1 {
+    height: 5rem;
+    background: lightgray;
+}
+
+img {
+    height: 10rem;
+    width: auto;
+}
+
+a {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    text-align: center;
+    text-justify: auto;
+    background: lightgray;
 }

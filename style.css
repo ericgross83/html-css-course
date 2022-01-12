@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Wenn das nicht genutzt wird, wird padding auf die weite drauf gerechnet was zu unvorhergesehenen Ergebnissen führen kann  */
+  box-sizing: border-box;
+}
+
+div {
+  background: rgb(69, 66, 105);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+}

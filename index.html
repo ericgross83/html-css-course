@@ -14,9 +14,30 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello There Link</h1>
-    <a href="https://www.google.com/" target="_blank">
-        <img src="./img/iconmonstr-youtube-6.svg" alt="">
-    </a>
+    <h1>Forms</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input maxlength="30" min="6" name="user" type="text" id="name" />
+      <label>Email</label>
+      <input
+        name="email"
+        type="email"
+        autocomplete="off"
+        placeholder="Characters should be 6"
+        required
+      />
+      <select name="products" id="product">
+        <option value=""></option>
+        <option value="macbook">Macbook</option>
+        <option value="iphone">Iphone</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" cols="50" rows="20"></textarea>
+      <input type="radio" name="products" value="macbook">
+      <input type="radio" name="products" value="iphone">
+      <input type="radio" name="products" value="amazon">
+      <input type="radio" name="products" value="google">
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

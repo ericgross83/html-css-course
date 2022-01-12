@@ -4,14 +4,35 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+.container {
+    border: 3px solid black;
 }
 
-body {
-  background: lightgray;
+.box {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-  font-size: 4.8rem;
+.box1 {
+    background: rgb(162, 92, 202);
 }
+.box2 {
+    background: rgb(92, 94, 202);
+}
+.box3 {
+    background: rgb(118, 202, 92);
+}
+.box4 {
+    background: rgb(202, 92, 129);
+}
+.box5 {
+    background: rgb(202, 176, 92);
+}
+.box6 {
+    background: rgb(52, 52, 102);
+}
+
+

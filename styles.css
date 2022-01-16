@@ -7,7 +7,11 @@
 }
 
 html {
-  font-size: 62, 5%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -27,6 +31,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: normal;
 }
 
 h4,
@@ -37,6 +42,15 @@ h5 {
 a {
   color: white;
   text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /* Nav section with hero */
@@ -52,10 +66,12 @@ a {
   align-items: center;
   padding: 2rem;
   min-height: 10vh;
+  flex-wrap: wrap;
 }
 
 .main-head nav ul {
   display: flex;
+
   flex: 1 1 40rem;
   justify-content: space-around;
   align-items: center;
@@ -64,6 +80,8 @@ a {
 
 #logo {
   flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
 }
 
 .hero {
@@ -73,7 +91,8 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.5), transparent), url('/assets/img/landing-page.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/assets/img/landing-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,5 +101,21 @@ a {
 
 .hero h3 {
   padding: 3rem;
-  margin: 3rem;
+}
+
+@media screen and (max-width: 932px) {
+
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+
+
 }

@@ -9,7 +9,7 @@
 }
 
 .box {
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .box1 {
@@ -20,10 +20,22 @@
 }
 .box3 {
   background: rgb(163, 126, 160);
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
 .box4 {
   background: rgb(139, 163, 132);
 }
 .box5 {
-  background: rgb(211, 166, 166);
+  background: rgb(177, 176, 146);
+}
+
+/* Parent */
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
 }

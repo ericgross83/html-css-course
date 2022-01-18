@@ -62,16 +62,20 @@ button:hover {
 .main-head {
   background: #131c27;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .main-head nav {
   display: flex;
   width: 90%;
   margin: auto;
-  align-items: center;
   padding: 2rem;
   min-height: 10vh;
+  align-items: center;
   flex-wrap: wrap;
+  
 }
 
 .main-head nav ul {
@@ -199,6 +203,7 @@ button:hover {
   min-height: 40vh;
   margin: 2rem 5rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .cards img {
@@ -206,13 +211,90 @@ button:hover {
   margin: 2rem;
 }
 
-.card h4, p {
+.card h4,
+p {
   padding: 1rem;
 }
 
-
-.card-icon{
+.card-icon {
   background: #27394e;
+}
+
+/* Contact Section */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./assets/img/contact-mountain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(0, 28, 39, 0.8);
+  border-radius: 20px;
+  width: 60%;
+  color: white;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Media Query */
@@ -244,5 +326,17 @@ button:hover {
   .locations-head h3 {
     background: rgba(19, 28, 39, 0.9);
     -webkit-text-fill-color: white;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-right: 2rem;
   }
 }

@@ -87,7 +87,8 @@ h1 {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   /* Added to have the box shaddow show over other backgrounds */
   z-index: 2;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .main-head nav {

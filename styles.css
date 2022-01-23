@@ -30,6 +30,7 @@ html {
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -351,6 +352,7 @@ footer {
   padding: 3rem 5%;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 10vh;
 }
 
 footer h4 {
@@ -380,6 +382,7 @@ footer ul {
     /* A hack to make the burger menu apear after the menu shows */
     position: relative;
     display: block;
+    cursor: pointer;
   }
 
   .burger span {
@@ -407,36 +410,20 @@ footer ul {
     transition: transform 1s ease;
   }
 
-  .menu-check {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(5%, -50%);
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-  }
-
-  .menu-check:checked + .nav-links {
+  .nav-open {
     transform: translate(-100%);
   }
-  .menu-check:checked ~ .burger span {
-    background: white;
-  }
-
-  .menu-check:checked ~ .burger span:nth-child(1) {
+  .toggle .line1 {
     background: white;
     transform: rotateZ(45deg) translateY(300%);
   }
-  .menu-check:checked ~ .burger span:nth-child(3) {
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
     background: white;
     transform: rotateZ(-45deg) translateY(-300%);
-  }
-  .menu-check:checked ~ .burger span:nth-child(2) {
-    opacity: 0;
   }
 
   /* About Section */
@@ -474,7 +461,6 @@ footer ul {
 }
 
 @media screen and (min-width: 1700px) {
-
   html {
     --header1: 3.7rem;
     --header2: 5.2rem;
@@ -483,5 +469,4 @@ footer ul {
     --text: 3.2rem;
     --big: 7.7rem;
   }
-  
 }
